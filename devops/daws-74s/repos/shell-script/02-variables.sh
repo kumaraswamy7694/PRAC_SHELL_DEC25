@@ -1,3 +1,4 @@
 #!/bin/bash
 DATE=$(date)
-echo "Hello, this script executed at time: $DATE"
+TIME=$(time)
+echo "Hello, this script executed at time: $DATE and $TIME"
