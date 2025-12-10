@@ -10,7 +10,7 @@
 
 
 HOLI=$2
-if [HOLI == "Holi"]
+if [HOLI == "diwali"]
 then
     echo "Holi is festival of colors"
 else
