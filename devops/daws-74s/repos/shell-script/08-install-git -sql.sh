@@ -17,7 +17,7 @@ then
     exit 1  # command will exit with status 1 because it is not sudo 
 fi
 
-yum install mysqllll -y 
+yum install mysql -y 
 
 if [ $? -ne 0 ]
 then 
