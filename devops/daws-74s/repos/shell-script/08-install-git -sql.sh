@@ -14,7 +14,7 @@ USERID=$(id -u) # executing the id -u and  saving in USERID variable
 if [ $USERID -ne 0 ]
 then 
     echo " ERROR :: please run with sudo or root user"
-    exit 1
+    exit 1  # command will exit with status 1 because it is not sudo 
 fi
 
 yum install git -y 
