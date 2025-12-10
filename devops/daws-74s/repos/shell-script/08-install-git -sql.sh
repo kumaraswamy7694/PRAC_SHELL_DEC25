@@ -17,4 +17,12 @@ then
     exit 1  # command will exit with status 1 because it is not sudo 
 fi
 
-yum install mysql -y 
+yum install mysqllll -y 
+
+if [ $? -ne 0 ]
+then 
+    echo " installation of mysql is error "
+    exit 1
+else 
+    echo " installation of mysql is success "
+fi
