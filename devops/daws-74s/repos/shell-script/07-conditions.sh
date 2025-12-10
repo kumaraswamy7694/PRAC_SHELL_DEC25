@@ -12,7 +12,7 @@
 HOLI=$2
 if [HOLI == "Holi"]
 then
-    echo "Holi is festival of colors"
+    echo "$HOLI is festival of colors"
 else
     echo "diwali is festival of lights"
 fi
