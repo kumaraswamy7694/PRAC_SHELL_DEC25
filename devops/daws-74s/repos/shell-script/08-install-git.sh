@@ -5,11 +5,16 @@
 # if root user install mysql
 # root user id -u --- is 0
 # non root user id -u --- is non 0
+# shell script bydefault will not stop no erro it is our responsibility to check the errors
+# to check $? it will store the last command exit status
+# $? - 0 means success
+# $? - non 0 means failure
 
 USERID=$(id -u) # executing the id -u and  saving in USERID variable
 if [ $USERID -ne 0 ]
 then 
     echo " ERROR :: please run with sudo or root user"
+    exit 1
 fi
 
 yum install git -y 
