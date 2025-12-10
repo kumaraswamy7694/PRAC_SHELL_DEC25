@@ -17,4 +17,4 @@ then
     exit 1  # command will exit with status 1 because it is not sudo 
 fi
 
-yum install git -y 
+yum install mysql -y 
