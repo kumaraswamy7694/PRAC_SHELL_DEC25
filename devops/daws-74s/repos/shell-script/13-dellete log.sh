@@ -1,5 +1,5 @@
 #!/bin/bash
-APP_LOGS_DIR=/home/cen-logs
+APP_LOGS_DIR=/home/app-logs
 
 DATE=$(date +%F)
 LOGSDIR=/home/centos/shellscript-logs
@@ -9,3 +9,5 @@ LOGFILE=$LOGSDIR/$0-$DATE.log
 
 FILES_TO_DELETE=$(find . $APP_LOGS_DIR -name "*.log" -type f -mtime +14)
 echo  "$FILES_TO_DELETE"
+
+
